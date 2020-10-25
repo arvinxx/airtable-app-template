@@ -16,7 +16,7 @@ open `.block/remote.json` and change the `blockId` and `baseId` to match AirTabl
 This ID will show below
 
 ```
-block init appwfwENHN3Daxd6w/blkNL28deUVyBeaB3 --template=xxxxx
+git clone https://github.com/arvinxx/airtable-app-template  your_paths
 ```
 
 it looks like below
