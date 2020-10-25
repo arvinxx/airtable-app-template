@@ -1,4 +1,9 @@
 {
+  "homepage": "https://github.com/arvinxx/airtable-app-template#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arvinxx/airtable-app-template.git"
+  },
   "dependencies": {
     "@airtable/blocks": "1.2.0",
     "react": "^16.9.0",
