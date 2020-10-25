@@ -30,4 +30,4 @@ it looks like below
 
 ## License
 
-[MIT](./LICENSE.md) ® Arvin Xu
+[MIT](./LICENSE) ® Arvin Xu

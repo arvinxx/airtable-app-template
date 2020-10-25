@@ -64,4 +64,4 @@ PS: 不可以删掉 `package-lock.json`, 否则不能发版
 
 ## License
 
-[MIT](./LICENSE.md) ® Arvin Xu
+[MIT](./LICENSE) ® Arvin Xu
