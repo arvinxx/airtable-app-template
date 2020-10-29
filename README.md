@@ -1,5 +1,3 @@
-[English](./README.md) | 简体中文
-
 # AirTable App Template
 
 [AirTable](https://airtable.com) App 开发模板
