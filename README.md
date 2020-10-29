@@ -18,6 +18,7 @@ npm i -g @airtable/blocks-cli
 ```shell script
 # 将命令行中的 `blockId` 和 `baseId` 替换成对应值
 # 将最末尾的 your_paths 改成目标路径
+
 block init blockId/baseId  --template=https://github.com/arvinxx/airtable-app-template your_paths
 ```
 
