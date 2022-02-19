@@ -7,13 +7,10 @@
 ### 安装 `block` CLI
 
 ```
-npm i -g @airtable/blocks-cli
+npm i -g @airtable/blocks-cli@2.0.0-beta.4
 ```
 
 ### 使用 `block init`
-
-
-
 
 ```shell script
 # 将命令行中的 `blockId` 和 `baseId` 替换成对应值
@@ -25,6 +22,7 @@ block init blockId/baseId  --template=https://github.com/arvinxx/airtable-app-te
 这个指令将直接初始化项目并自动安装依赖
 
 ### 手动初始化
+
 如果不想使用 `block init` 也可以采用手动的方式初始化脚手架
 
 先克隆项目
@@ -43,6 +41,7 @@ git clone https://github.com/arvinxx/airtable-app-template  your_paths
   "baseId": "blkNL28deUVyBeaB3"
 }
 ```
+
 然后正常安装依赖进行开发即可
 
 ## 指南
@@ -58,8 +57,6 @@ npm start
 ```shell script
 npm release
 ```
-PS: 不可以删掉 `package-lock.json`, 否则不能发版
-
 
 ## License
 
