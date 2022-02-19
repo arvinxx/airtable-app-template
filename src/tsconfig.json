@@ -4,9 +4,7 @@
     "target": "es2018",
     "sourceMap": true,
     "allowSyntheticDefaultImports": true,
-    "jsx": "react"
+    "jsx": "react-jsx"
   },
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }
