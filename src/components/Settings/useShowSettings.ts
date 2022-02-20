@@ -4,8 +4,8 @@ import {
   useViewport,
 } from '@airtable/blocks/ui';
 
-export const ShowSettingsKey = {
-  SHOW_SETTINGS: 'showSettings',
+const ShowSettingsKey = {
+  showSettings: 'showSettings',
 };
 
 export interface ShowSettingsOptions {
@@ -27,21 +27,25 @@ export interface ShowSettingsOptions {
  * @param options
  */
 export const useShowSettings = (
-  options: ShowSettingsOptions = { initValue: false, openViewport: true }
+  options: ShowSettingsOptions = { initValue: false, openViewport: false }
 ) => {
   const { openViewport, initValue } = options;
   const viewport = useViewport();
   const globalConfig = useGlobalConfig();
 
   const isShowSettings =
-    globalConfig.get(ShowSettingsKey.SHOW_SETTINGS) || initValue;
+    (globalConfig.get(ShowSettingsKey.showSettings) as boolean) || initValue;
 
   const setShowSettings = (visible: boolean) => {
-    globalConfig.setAsync(ShowSettingsKey.SHOW_SETTINGS, visible).finally();
+    globalConfig.setAsync(ShowSettingsKey.showSettings, visible).finally();
+  };
+
+  const closeSettings = () => {
+    setShowSettings(false);
   };
 
   useSettingsButton(() => {
-    if (openViewport && !isShowSettings) {
+    if (openViewport) {
       viewport.enterFullscreenIfPossible();
     }
     setShowSettings(!isShowSettings);
@@ -49,6 +53,6 @@ export const useShowSettings = (
 
   return {
     isShowSettings,
-    setShowSettings,
+    closeSettings,
   };
 };
